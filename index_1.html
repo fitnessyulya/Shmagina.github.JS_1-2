@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function pow(x, n) {
+		var result = 1;
+
+		for (var i = 0; i < n; i++) {
+			result *= x; 
+		}
+		return result;
+	}
+
+	var a = prompt("укажите число х", "");
+	var b = prompt("укажите степень n", "");
+
+	if (b < 0) {
+		alert('введите число, которое больше 0');
+	}
+	if (0 == a - Math.round( a ) && 0 == b - Math.round( b ) ) {
+		alert( pow(a, b) );
+	}
+	else {
+		alert('введите целое число')
+	}
+
+</script>
+	
+
+</body>
+</html>
