@@ -6,6 +6,19 @@
 </head>
 <body>
 <script>
+var names = [];
+var i;
+for (i = 0; i < 5; i++) {
+	-names.push (prompt('введите имя пользователя'));
+}
+
+var name = prompt('введите свое имя');
+for (i = 0; i < names.length; i++) {
+	if (name === names[i]) {
+		alert(name + ', вы успешно вошли');
+	}
+}
+alert('Ошибка');
 
 </script>
 	
